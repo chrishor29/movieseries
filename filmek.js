@@ -345,7 +345,6 @@ function setScript(tr) {
 	for ( let i=0; i<childCount; i++ ) {
 		//if ( i==1 ) { TDs[i].innerHTML = tr.id }
 
-		TDs[i].contentEditable = true; // Szerkeszthetővé teszi
 		TDs[i].onclick = function() {
 			this.focus(); // Fókuszt állít az elemre
 			//document.getElementById("span_toolbar").style.visibility = "visible"
