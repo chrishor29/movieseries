@@ -1,0 +1,9 @@
+
+<script>
+	fetch(window.location.href)
+		.then(response => response.text())
+		.then(html => {
+			window.parent.postMessage(['varA', html], '*');
+		})
+		.catch(err => console.error('Hiba:', err));
+</script>

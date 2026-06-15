@@ -5,7 +5,7 @@ function loadHTML() {
 	let iframe = document.createElement("iframe") 
 	document.body.appendChild(iframe)
 	iframe.style.display = "none"
-	iframe.src = "Filmek.html"
+	iframe.src = dataFile
 	
 	let handler = function(e) { // #1 amikor betölti az oldalt, akkor indul meg ez
 		//console.log("loadHTML --> handler")
