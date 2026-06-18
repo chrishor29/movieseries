@@ -28,9 +28,9 @@ function arrangeScript(runArrange = false) {
 		const rows = Array.from(table.rows); // Sorokat tömbbé alakítjuk
 //  console.log(table.innerHTML) 
 
-		// Különválasztjuk az első 2 sort, amit nem kell rendezni
-		const headerRows = rows.slice(0, 2); // Az első 2 sor
-		const sortableRows = rows.slice(2);  // A többi sor, amit rendezünk
+		// Különválasztjuk az első sort, amit nem kell rendezni
+		const headerRows = rows.slice(0, 1); // Az első sor
+		const sortableRows = rows.slice(1);  // A többi sor, amit rendezünk
 /*
 sortableRows.forEach((r, i) => {
   console.log("Row", i, 
