@@ -1,10 +1,21 @@
-cd /d D:\webpage\GITHUB
+@echo off
+cd /d "D:\webpage\GITHUB"
 
-git config --global user.name "chrishor29"
-git config --global user.email "chrishor29@gmail.com"
-
+echo Git add...
 git add .
-git commit -m "update"
 
-git push origin main
+git diff --cached --quiet
+
+if errorlevel 1 (
+    echo Commit...
+    git commit -m "Automatic update"
+
+    echo Push...
+    git push origin main
+) else (
+    echo Nincs valtozas.
+)
+
+echo.
+echo Kesz.
 pause
